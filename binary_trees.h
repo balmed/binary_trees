@@ -82,6 +82,10 @@ heap_t *heap_insert(heap_t **root, int value);
 heap_t *array_to_heap(int *array, size_t size);
 int heap_extract(heap_t **root);
 int *heap_to_sorted_array(heap_t *heap, size_t *size);
+size_t tree_height(const heap_t *tree);
+size_t tree_size_h(const binary_tree_t *tree);
+void _preorder(heap_t *tree, heap_t **node, size_t height);
+void heapify(heap_t *root);
 
 #endif /* BINARY_TREES_H */
 
